@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "FontFrente";
+    src: url("FontFrente.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Styles globaux */
 * {
     margin: 0;
@@ -6,51 +13,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'FontFrente', sans-serif;
     line-height: 1.6;
     color: #000000;
     background-color: #000000;
-}
-
-/* Header & Navigation */
- header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 15px 20px ;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-}
-
- header.logo img{
-    max-width: 20px;
-    height: auto;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-nav ul li {
-    margin-left: 30px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #000000;
 }
 
 /* Hero Section */
@@ -72,17 +38,17 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .cta-button {
-    background-color: #4caf4f00;
+    background-color: #0000001d;
     color: #fff;
     padding: 15px 30px;
     font-size: 18px;
@@ -95,6 +61,7 @@ nav ul li a:hover {
 
 .cta-button:hover {
     background-color: #000000;
+    color: #ff2828;
 }
 
 /* Sections */
@@ -113,13 +80,79 @@ nav ul li a:hover {
     color: #fff;
 }
 
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('background-image.jpg'); /* Remplacez par votre image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Boutons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff0000;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #000000;
+    transform: translateY(-3px);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+.button.secondary {
+    background-color: #000000;
+}
+
+.button.secondary:hover {
+    background-color: #ff0000;
+}
+
+
 .contact {
     background-color: #000000;
 }
 
 /* Formulaire */
 form {
-    max-width: 600px;
+    max-width: 3000px;
     margin: 0 auto;
     background-color: #fff;
     padding: 30px;
@@ -143,28 +176,32 @@ form {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    font-family: 'FontFrente', sans-serif;
 }
 
 form textarea {
     height: 150px;
+    font-family: 'FontFrente', sans-serif;
 }
 
 .btn-submit {
+    font-family: 'FontFrente', sans-serif;
     background-color: #ff0000;
-    color: #fff;
+    color: #000000;
     padding: 15px 30px;
+    font-size: 18px;
     border: none;
     border-radius: 30px;
-    cursor: pointer;
-    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
 .btn-submit:hover {
-    background-color: #bd0c0c;
+    background-color: #000000;
+    color: #fff;
 }
 
-/* Footer */
 footer {
     background-color: #000000;
     color: #fff;
