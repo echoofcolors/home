@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo of Colors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="imageLogo3.jpg" alt="Logo" class="logo-img"></a>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil avec image en fond -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Echo of Colors</h1>
+            <p>Embark on a sensational story</p>
+            <a href="#image1.jpg" class="cta-button">Discover</a>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+
+    <!-- Section Contact avec formulaire -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact us</h2>
+            <form action="mailto:echoofcolors@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Echo of Colors - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
